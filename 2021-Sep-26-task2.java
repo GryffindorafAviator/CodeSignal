@@ -39,3 +39,32 @@ Guaranteed constraints:
 
 A boolean representing whether the new array b will be sorted in strictly ascending order or not.
 
+boolean alternatingSort(int[] a) {
+    if (a.length < 2) {
+        return true;
+    }
+    
+    int[] b = new int[a.length];
+    int start = 0;
+    int end = a.length - 1;
+    
+    for (int i = 0; i < a.length; ++i) {
+        b[i] = a[start];
+        
+        if (i > 0 && b[i - 1] >= b[i]) {
+            return false;
+        }
+        
+        i += 1;
+        b[i] = a[end];
+        
+        if (b[i - 1] >= b[i]) {
+            return false;
+        }
+        
+        ++start;
+        --end;
+    }
+    
+    return true;    
+}
