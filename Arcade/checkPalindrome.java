@@ -1,30 +1,30 @@
-Given the string, 
-check if it is a palindrome.
+// Given the string, 
+// check if it is a palindrome.
 
-Example
+// Example
 
-For inputString = "aabaa", the output should be
-checkPalindrome(inputString) = true;
-For inputString = "abac", the output should be
-checkPalindrome(inputString) = false;
-For inputString = "a", the output should be
-checkPalindrome(inputString) = true.
-Input/Output
+// For inputString = "aabaa", the output should be
+// checkPalindrome(inputString) = true;
+// For inputString = "abac", the output should be
+// checkPalindrome(inputString) = false;
+// For inputString = "a", the output should be
+// checkPalindrome(inputString) = true.
+// Input/Output
 
-[execution time limit] 3 seconds (java)
+// [execution time limit] 3 seconds (java)
 
-[input] string inputString
+// [input] string inputString
 
-A non-empty string consisting of lowercase characters.
+// A non-empty string consisting of lowercase characters.
 
-Guaranteed constraints:
-1 ≤ inputString.length ≤ 105.
+// Guaranteed constraints:
+// 1 ≤ inputString.length ≤ 105.
 
-[output] boolean
+// [output] boolean
 
-true if inputString is a palindrome, false otherwise.
+// true if inputString is a palindrome, false otherwise.
   
-Solution
+// Solution
 boolean checkPalindrome(String inputString) {
     if (inputString.length() < 2) {
         return true;
@@ -46,4 +46,4 @@ boolean checkPalindrome(String inputString) {
 }
 
 
-TC: O(n); SC:O(1)
+// TC: O(n); SC:O(1)
