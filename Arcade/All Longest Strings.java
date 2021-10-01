@@ -1,30 +1,30 @@
-Given an array of strings, 
-return another array containing all of its longest strings.
+// Given an array of strings, 
+// return another array containing all of its longest strings.
 
-Example
+// Example
 
-For inputArray = ["aba", "aa", "ad", "vcd", "aba"], 
-the output should be
-allLongestStrings(inputArray) = ["aba", "vcd", "aba"].
+// For inputArray = ["aba", "aa", "ad", "vcd", "aba"], 
+// the output should be
+// allLongestStrings(inputArray) = ["aba", "vcd", "aba"].
 
-Input/Output
+// Input/Output
 
-[execution time limit] 3 seconds (java)
+// [execution time limit] 3 seconds (java)
 
-[input] array.string inputArray
+// [input] array.string inputArray
 
-A non-empty array.
+// A non-empty array.
 
-Guaranteed constraints:
-1 ≤ inputArray.length ≤ 10,
-1 ≤ inputArray[i].length ≤ 10.
+// Guaranteed constraints:
+// 1 ≤ inputArray.length ≤ 10,
+// 1 ≤ inputArray[i].length ≤ 10.
 
-[output] array.string
+// [output] array.string
 
-Array of the longest strings, 
-stored in the same order as in the inputArray.
+// Array of the longest strings, 
+// stored in the same order as in the inputArray.
 
-Solution
+// Solution
 String[] allLongestStrings(String[] inputArray) {
    if (inputArray.length == 1) {
        return inputArray;
@@ -48,4 +48,4 @@ String[] allLongestStrings(String[] inputArray) {
     return Arrays.copyOf(inputArray, end);
 }
 
-TC: O(n); SC: O(1)
+// TC: O(n); SC: O(1)
