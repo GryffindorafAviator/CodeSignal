@@ -1,30 +1,31 @@
-Ticket numbers usually consist of an even number of digits. 
-A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half.
+// Ticket numbers usually consist of an even number of digits. 
+// A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half.
 
-Given a ticket number n, 
-determine if it's lucky or not.
+// Given a ticket number n, 
+// determine if it's lucky or not.
 
-Example
+// Example
 
-For n = 1230, the output should be
-isLucky(n) = true;
-For n = 239017, the output should be
-isLucky(n) = false.
-Input/Output
+// For n = 1230, the output should be
+// isLucky(n) = true;
+// For n = 239017, the output should be
+// isLucky(n) = false.
+// Input/Output
 
-[execution time limit] 3 seconds (java)
+// [execution time limit] 3 seconds (java)
 
-[input] integer n
+// [input] integer n
 
-A ticket number represented as a positive integer with an even number of digits.
+// A ticket number represented as a positive integer with an even number of digits.
 
-Guaranteed constraints:
-10 ≤ n < 106.
+// Guaranteed constraints:
+// 10 ≤ n < 106.
 
-[output] boolean
+// [output] boolean
 
-true if n is a lucky ticket number, false otherwise.
+// true if n is a lucky ticket number, false otherwise.
   
+// Solution
 boolean isLucky(int n) {
     List<Integer> digits = new ArrayList<>();
     int cnt = 0;
@@ -45,4 +46,4 @@ boolean isLucky(int n) {
     return false;
 }
 
-TC: O(n); SC: O(n)
+// TC: O(n); SC: O(n)
